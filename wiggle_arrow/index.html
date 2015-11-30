@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Growing Grass</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div class="arrow_container">
+			<span><h1>V</h1></span>
+		</div>
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+	<script>
+		$(document).ready(function(){
+
+	$(".arrow_container span").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
+  		$(this).removeClass("animated")  
+	})
+
+	$(".arrow_container span").hover(function(){
+	  $(this).addClass("animated");        
+	})
+
+		});
+	</script>
+	
+	
+</html>

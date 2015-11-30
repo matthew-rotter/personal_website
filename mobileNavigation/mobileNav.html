@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	
+
+	<head>
+			<link rel="stylesheet" href="main.css">
+
+	</head>
+
+
+
+	<body>
+		<div id="mobileNavBtn" >&#9776;</div>
+		<nav id="mobileNav" >
+		<div>
+		<ul>
+			<a href="#"><li id = "active">Home</li></a>
+			<li><a>	Services</a>
+				<ul class = "dropdownMenu">
+					<a href="#"><li>Web Development</li></a>
+					<a href="#"><li>Brand Strategy </li></a>
+				</ul>
+			</li>
+		<a href="#"><li>Gallery</li></a>
+		<a href="#"><li>Contact</li></a>
+		</ul>
+	</div>
+</nav>
+
+
+
+<nav id = "mainNav" >
+	<a href="#"><div id = "logo">Dynamic Nature</div></a>
+
+
+	<ul>
+		<a href="#"><li id = "active">Home</li></a>
+		<li><a >
+				Services</a>
+				<ul class = "dropdownMenu">
+					<a href="#"><li>Web Development</li></a>
+					<a href="#"><li>Brand Strategy </li></a>
+				</ul>
+		</li>
+		<a href="#"><li>Gallery</li></a>
+		<a href="#"><li>Contact</li></a>
+	</ul>
+</nav>
+	</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#mobileNav").hide();
+	$("#mobileNavBtn").click(function(){
+		$("#mobileNav").slideToggle();
+	});
+		
+
+
+
+	});
+</script>
+</html>

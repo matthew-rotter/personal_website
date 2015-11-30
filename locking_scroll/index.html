@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>CSS3 - fullPage.js</title>
+	<link rel="stylesheet" type="text/css" href="fullPage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+       		});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section" id="section0" style = "height: 100vh; background-color: orange;">
+		<h1>fullPage.js</h1>
+		<p>CSS3</p>
+		<img src="imgs/fullPage.png" alt="fullPage" />
+	</div>
+	<div class="section" id="section1" style = "height: 100vh; background-color: blue;">
+		<div class="intro">
+			<h1>Speed on mobile</h1>
+			<p>
+	      If CSS3 transforms are supported (e.g. on mobile devices) they will be used for animations, usually a good
+	      choice if the animation on mobile devices is slow.
+			</p>
+		</div>
+	</div>
+	<div class="section" id="section2" style = "height: 100vh; background-color: red;">
+		<div class="intro">
+			<h1>No CSS3? No problem!</h1>
+			<p>If CSS3 is not available, animations will fall back to jQuery animate.</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

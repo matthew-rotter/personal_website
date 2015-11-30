@@ -1,0 +1,12 @@
+.grass_div img{
+    height: 100px;
+    width: 100px;
+}
+.grow{
+   -webkit-animation: grow 1s 1 linear; 
+}
+
+
+@-webkit-keyframes grow{
+    0%{transform: scale(1,0);}
+}

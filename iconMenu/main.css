@@ -1,0 +1,25 @@
+nav img{
+	width: 100px;
+	padding:10px;
+}
+.icon{
+	display: inline;
+}
+.nav-container{
+	display: inline-block;
+	text-align: center;
+}
+.nav-container h6{
+	display: inline-block;
+	color: transparent;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 2px;
+}
+.nav-container .icon img:nth-child(2n+0){display:none}
+
+.nav-container .icon:hover img:nth-child(2n+1){display:none;}
+
+.nav-container .icon:hover img:nth-child(2n+0){display:inline;}
+
+.nav-container:hover  h6{color: white;}

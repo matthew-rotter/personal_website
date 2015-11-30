@@ -1,0 +1,73 @@
+body{
+	background-image: url("space.jpg");
+	background-size: cover;
+}
+
+.star_container div{
+	position: absolute;
+	
+	background-color: white;
+	
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px 5px white;	
+
+	
+}
+.star[data-star='0']{
+	height: 10px;
+	width: 10px;
+	right: 10%;
+	bottom: 50%;
+	-webkit-animation: twinkle 5s infinite linear;
+}
+.star[data-star='1']{
+	height: 4px;
+	width: 4px;
+	right: 70%;
+	bottom: 20%;
+	-webkit-animation: twinkle 4s infinite linear;
+}
+.star[data-star='2']{
+	height: 10px;
+	width: 10px;
+	left: 10%;
+	bottom: 60%;
+-webkit-animation: twinkle 9s infinite linear;}
+.star[data-star='3']{
+	height: 6px;
+	width: 6px;
+	left: 20%;
+	top: 10%;
+	-webkit-animation: twinkle 4s infinite linear;
+}
+.star[data-star='4']{
+	height: 4px;
+	width: 4px;
+	right: 45%;
+	bottom: 50%;
+-webkit-animation: twinkle 12s infinite linear;
+}
+.star[data-star='5']{
+	height: 11px;
+	width: 11px;
+	right: 10%;
+	bottom: 80%;
+-webkit-animation: twinkle 9s infinite linear;
+}
+
+@-webkit-keyframes twinkle{
+	0%{	
+	 opacity: 0.1;
+    filter: alpha(opacity=10);
+	}
+	50%{	
+	 opacity: 0.8;
+    filter: alpha(opacity=80);
+	}
+	100%{
+		opacity: 0.1;
+    filter: alpha(opacity=10);
+	}
+
+	
+}

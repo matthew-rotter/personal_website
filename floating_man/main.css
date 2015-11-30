@@ -1,0 +1,41 @@
+ /*.grass_div{
+ width:200px;
+    height:200px;
+    background-color:#00f;
+   
+}
+#grass{
+	
+/*}*/
+body{
+	margin: 0;
+}
+
+.container{
+		width: 100vw;
+		height: 100vh;
+
+}
+.container img{
+ max-height: 100%;
+}
+
+.float_me {
+
+ -webkit-animation: grow 34s infinite linear;
+  -moz-animation: grow 1s 1 linear;
+  -ms-animation: grow 1s 1 linear;
+	
+	
+}
+
+@-webkit-keyframes grow {
+
+	0%{	  transform: translate(10vw,10vh);}
+	25%{	 transform: translate(10vw,80vh) rotate(90deg);}
+	50%{	 transform: translate(80vw,80vh) rotate(180deg);}
+	75%{	 transform: translate(80vw,10vh) rotate(270deg);}
+	100%{ transform: translate(10vw,10vh) rotate(360deg);}
+	
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<title>Here is where the text goes</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	
+	<body>
+		<h1>Matthew Rotter</h1>
+		<p id = "one">|</p>
+		<p id = "two"></p>
+		<p id = "three"></p>
+	</body>
+
+
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	 <script>
+	 	$(document).ready(function(){
+
+	 		var one = "Stylish";
+	 		var two = "Functional";
+	 		var three = "Design";
+			$("#one").css("color", "black");
+	 		$("#one").fadeIn(300).fadeOut(300).fadeIn(300).fadeOut(300).fadeIn(300); // flash -the text bar
+	 		
+	 		
+	 		var time = 1500; // trigger the display function after the blinking stops
+	 		setTimeout(function(){displayText("one", one);}, time);
+	 		time = time + one.length*110; // start the next line after the function finished
+	 		setTimeout(function(){displayText("two", two);}, time);
+	 		time = time + two.length*110;
+	 		setTimeout(function(){displayText("three", three);}, time);
+	 		
+
+
+	 		function displayText(row, str){
+
+	 		$("#" + row).css("color", "black"); // set everything to being visible
+	 		
+	 		var arrValues = str.split(''); // make the string a dom element
+
+	 		$.each(arrValues, function (intIndex, objValue) {
+	 				$("#" + row).delay(100).queue(function(next){$(this).append(objValue); //append to the end of the string
+    		next();});	
+	 		
+	 		
+			})
+	 		
+	 		
+	 		
+
+	 		}
+	 	
+	 	
+	 		
+
+	 	});
+
+
+	 </script>
+
+</html>

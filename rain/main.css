@@ -1,0 +1,111 @@
+body{
+	background-color: blue;
+	margin: 0;
+}
+
+#skyline{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.snowflake_container{
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+	height: 99vh;
+	width: 99vw;
+	top: 0;
+	left: 0;
+}
+.hide_me{
+	visibility: hidden;
+}
+
+.snowflake_container img[data-flake='0'] {left: 5%;}
+.snowflake_container img[data-flake='1'] {left: 15%;}
+.snowflake_container img[data-flake='2'] {left: 25%;}
+.snowflake_container img[data-flake='3'] {left: 35%;}
+.snowflake_container img[data-flake='4'] {left: 45%;}
+.snowflake_container img[data-flake='5'] {left: 55%;}
+.snowflake_container img[data-flake='6'] {left: 65%;}
+.snowflake_container img[data-flake='7'] {left: 75%;}
+.snowflake_container img[data-flake='8'] {left: 85%;}
+.snowflake_container img[data-flake='9'] {left: 95%;}
+
+.rain_container img[data-drop='0']{left:5%;}
+.rain_container img[data-drop='1']{left:10%;}
+.rain_container img[data-drop='2']{left:15%;}
+.rain_container img[data-drop='3']{left:20%;}
+.rain_container img[data-drop='4']{left:25%;}
+.rain_container img[data-drop='5']{left:30%;}
+.rain_container img[data-drop='6']{left:35%;}
+.rain_container img[data-drop='7']{left:40%;}
+.rain_container img[data-drop='8']{left:45%;}
+.rain_container img[data-drop='9']{left:50%;}
+.rain_container img[data-drop='10']{left:55%;}
+.rain_container img[data-drop='11']{left:60%;}
+.rain_container img[data-drop='12']{left:65%;}
+.rain_container img[data-drop='13']{left:70%;}
+.rain_container img[data-drop='14']{left:75%;}
+.rain_container img[data-drop='15']{left:80%;}
+.rain_container img[data-drop='16']{left:85%;}
+.rain_container img[data-drop='17']{left:90%;}
+.rain_container img[data-drop='18']{left:95%;}
+
+
+.rain_container img{
+	width: 2%;
+}
+.snowflake_container img, .rain_container img{
+	position: absolute;
+	top:-180px;
+	z-index: -1;
+}
+
+.flake{
+	 -webkit-animation: fall 14s infinite linear;
+  -moz-animation: fall 14s infinite linear;
+  -ms-animation: fall 14s infinite linear;
+}
+.rain{
+	 -webkit-animation: rain 6s infinite linear;
+  -moz-animation: rain 6s infinite linear;
+  -ms-animation: rain 6s infinite linear;
+}
+
+
+@-webkit-keyframes fall {
+ 0%{	 transform: translate(0px,-240px);}
+	100%{ 
+		transform: translate(0px ,110vh) rotate(140deg);
+	} 
+
+}  
+@-moz-keyframes fall {
+  0%{	 transform: translate(0px,-240px);}
+	100%{ transform: translate(0px ,110vh) rotate(140deg);} 
+
+}  
+@-ms-keyframes fall {
+ 0%{	 transform: translate(0px,-240px);}
+	100%{ transform: translate(0px ,110vh) rotate(140deg);} 
+
+}  
+
+@-webkit-keyframes rain {
+ 0%{	 transform: translate(0px,-240px);}
+	100%{ 
+		transform: translate(0px ,110vh) ;
+	} 
+
+}  
+@-moz-keyframes rain {
+  0%{	 transform: translate(0px,-240px);}
+	100%{ transform: translate(0px ,110vh);} 
+
+}  
+@-ms-keyframes rain {
+ 0%{	 transform: translate(0px,-240px);}
+	100%{ transform: translate(0px ,110vh);} 
+
+}  

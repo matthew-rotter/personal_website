@@ -1,0 +1,87 @@
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+#mainNav ul{
+	list-style: none;
+	margin-top: 0;
+}
+#mainNav ul li{
+	display: inline-block;
+	 position: relative;
+}
+#mainNav ul li:hover{
+	/*main hover action*/
+	background-color: orange;
+}
+#mainNav ul li:hover ul {
+	/*display the submenu block*/
+  display: block;
+  opacity: 1;
+}
+
+#mainNav ul li ul {
+	/*submenu formatting*/
+  position: absolute;
+  padding: 0;
+  left: 0;
+  opacity: 0;
+  text-align: left;
+  }
+
+#mainNav ul li ul li:hover { 
+	/*submenu hover action*/
+background-color: yellow;
+}
+/******************mobile Mernu****************/
+ #mobileNavBtn{
+ 	display: none;
+ 	cursor: pointer;
+ 	text-align: center;
+ }
+ #mobileNav{
+ 	display: none;
+ 	text-align: center;
+ }
+#mainNav{	
+	text-align: right;
+	cursor: pointer;
+}
+#mobileNav ul{
+	display: inline;
+	padding: 0;
+	margin:0;
+	text-align: left;
+}
+#mobileNav div{
+	text-align: center;
+	margin: auto;
+}
+#mobileNav ul li ul li{
+	/*subMenu Indentation*/
+	margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 1125px) {
+	#mobileNav{
+		display: block;
+	}
+	#mobileNav ul{
+		display: inline-block;
+	}
+	#mobileNav ul li ul{
+		display: block;
+	}
+	 #mobileNavBtn{
+		display: block;
+	}
+	#mainNav{
+		display:none;
+	}
+}

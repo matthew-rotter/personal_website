@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Make it rain</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body style = "background-color:white;">
+		
+		<img src="skyline.png" alt="" id = "skyline">
+
+		<div class="rain_container hide_me">
+			<img src="drop.png" alt="" data-drop = "7" >
+			<img src="drop.png" alt="" data-drop = "11" >			
+			<img src="drop.png" alt="" data-drop = "2" >
+			<img src="drop.png" alt="" data-drop = "13" >
+			<img src="drop.png" alt="" data-drop = "18" >
+			<img src="drop.png" alt="" data-drop = "12" >
+			<img src="drop.png" alt="" data-drop = "3" >
+			<img src="drop.png" alt="" data-drop = "17" >
+			<img src="drop.png" alt="" data-drop = "14" >
+			<img src="drop.png" alt="" data-drop = "8" >
+			<img src="drop.png" alt="" data-drop = "0" >
+			<img src="drop.png" alt="" data-drop = "10" >
+			<img src="drop.png" alt="" data-drop = "4" >
+			<img src="drop.png" alt="" data-drop = "6" >
+			<img src="drop.png" alt="" data-drop = "15" >
+			<img src="drop.png" alt="" data-drop = "5" >
+			<img src="drop.png" alt="" data-drop = "16" >
+			<img src="drop.png" alt="" data-drop = "9" >
+			<img src="drop.png" alt="" data-drop = "1" >
+			
+			
+		</div>
+
+		
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+	$(document).ready(function(){
+
+		$.each($('.rain_container img'), function(i, el){
+    
+	    setTimeout(function(){
+	       $(el).addClass("rain")
+	    },( i * 300 ));
+    
+});
+
+	
+	
+	});
+	</script>
+</html>

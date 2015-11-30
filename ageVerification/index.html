@@ -1,0 +1,67 @@
+<!doctype html> 
+<html>
+
+
+<head>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="ageVerification" >
+		
+		<h1>Are you 21+?</h1>
+		<input type="button" value = "Yes"id  = "yes">
+		
+		<input type="button" value = "No" id  = "no">
+
+
+
+
+
+
+	</div>
+	<div id="failedAge">
+	<h1>We're sorry, you are not old enough to view this page. </h1>
+	</div>
+	<div id="wrapper">
+		<h1>Here is where the normal content goes!</h1>
+		
+
+	</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+	$('#wrapper').hide();
+	$("#failedAge").hide();
+    $('#loading_wrap').remove();
+    $("#yes").click(function(){
+    	$("#ageVerification").hide();
+    	$("#wrapper").show();
+
+    });
+    $("#no").click(function(){
+    	$("#ageVerification").hide();
+    	$("#failedAge").show();
+    });
+});
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>

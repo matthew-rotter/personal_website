@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Make it rain</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+
+		
+		<div class="snowflake_container">
+			<img src="snow.png" alt="" data-flake = "0" >
+			<img src="snow.png" alt="" data-flake = "5">
+			<img src="snow.png" alt="" data-flake = "9">
+			<img src="snow.png" alt="" data-flake = "6">
+			<img src="snow.png" alt="" data-flake = "2">
+			<img src="snow.png" alt="" data-flake = "8">
+			<img src="snow.png" alt="" data-flake = "4">
+			<img src="snow.png" alt="" data-flake = "7">
+			<img src="snow.png" alt="" data-flake = "1">
+			<img src="snow.png" alt="" data-flake = "3">
+		</div>
+
+		<input type="button" id = "make_snow">
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#make_snow").click(function(){
+			$(".snowflake_container").toggleClass("hide_me");
+		});
+		$.each($('.snowflake_container img'), function(i, el){
+    
+	    setTimeout(function(){
+	       $(el).addClass("flake")
+	    },( i * 1200 ));
+    
+});
+
+	
+	
+	});
+	</script>
+</html>
